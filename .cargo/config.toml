@@ -1,7 +1,5 @@
 # Add the contents of this file to `config.toml` to enable "fast build" configuration. Please read the notes below.
 
-# NOTE: For maximum performance, build using a nightly compiler
-# If you are using rust stable, remove the "-Zshare-generics=y" below.
 
 [target.x86_64-unknown-linux-gnu]
 linker = "/usr/bin/clang"
@@ -13,7 +11,7 @@ rustflags = ["-Clink-arg=-fuse-ld=lld", "-Zshare-generics=y"]
 rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
 
 [target.aarch64-apple-darwin]
-rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld", "-Zshare-generics=y"]
+rustflags = ["-C", "link-arg=-fuse-ld=/usr/local/bin/zld"]
 
 [target.x86_64-pc-windows-msvc]
 linker = "rust-lld.exe"

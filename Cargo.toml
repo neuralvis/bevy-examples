@@ -1,9 +1,8 @@
-[package]
-name = "bevy_examples"
-version = "0.1.0"
-edition = "2021"
+[workspace]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+members = [
+    "example-000",
+    "example-001",
+]
 
-[dependencies]
-bevy = { path = "/Users/srinivm/develop/bevy", features = ["dynamic"] }
+resolver = "2"
