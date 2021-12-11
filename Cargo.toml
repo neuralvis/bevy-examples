@@ -3,6 +3,7 @@
 members = [
     "example-000",
     "example-001",
+    "example-002",
 ]
 
 resolver = "2"
